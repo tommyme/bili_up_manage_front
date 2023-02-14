@@ -1,6 +1,5 @@
 <script setup lang="ts">
-// import { Quasar, QBtn } from "quasar";
-// console.log(Quasar);
+
 interface Props {
   msg: string
   array?: string[]
@@ -16,28 +15,30 @@ let count = $ref(0)
 </script>
 
 <template lang="pug">
-h1 {{ msg }}
-.array
-  p(v-for="item in array") {{ item }}
-p.
-  IDE:
-  #[a(href="https://code.visualstudio.com/" target="_blank") Visual Studio Code]
-  +
-  #[a(href="https://github.com/johnsoncodehk/volar" target="_blank") Volar]
+.root
+  h1 {{ msg }}
+  .array
+    p(v-for="item in array") {{ item }}
+  p.
+    IDE:
+    #[a(href="https://code.visualstudio.com/" target="_blank") Visual Studio Code]
+    +
+    #[a(href="https://github.com/johnsoncodehk/volar" target="_blank") Volar]
 
-p
-  | See 
-  code README.md
-  |  for more info
+  p
+    | See 
+    code README.md
+    |  for more info
 
-p {{ count }} times
-q-btn(label="quasar button" @click="count++") 
+  p {{ count }} times
+  q-btn(label="quasar button" @click="count++") 
 
-.test-scss
-  p support for scss
+  .test-scss
+    p support for scss
 </template>
 
 <style scoped lang="scss">
+
 a {
   color: #42b983;
 }

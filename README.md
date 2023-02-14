@@ -24,3 +24,69 @@ You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/
 - [Reactivity Transform](https://vuejs.org/guide/essentials/reactivity-fundamentals.html#reactivity-transform)
 
 - composition api
+
+## dev journal
+
+### front-end
+
+- Separate scroll area using `q-scroll-area`
+
+- get the container's dynamic width with `$q.screen.width - somevalue + 'px'`
+
+- use `$q` with composition api
+
+- update Tree component with lazy loading feature
+
+- load data inside tree component
+
+- way of destructure data ( you don't need to specify all the keys )
+
+- warp fetch into jsonFetch 
+
+- canceled group page(need too much time(because sync req) and reqs)
+
+- replace `route.params.id` to `mid = $computed()`
+
+- add up's sign card
+
+- add a botton for move group
+
+- learn about v-slot (For custom tree node)
+
+- set disabled property for empty treeNode
+
+- add pinia to project
+
+- add type anno for destruction in ts
+
+- modify route `path: ':gid/space/:mid'` to gain gid in space.vue
+
+- modify tree.vue goto funciton to add args 
+
+- 绕过防盗链： [你已经是个成熟的前端了，应该学会破解防盗链了 - IM Geek开发者社区-移动开发者社区-开源社区-IM Geek官网](https://www.imgeek.org/article/825360047)
+
+- call a component's method: `QTree.getNodeFromKey`
+
+- PLAN
+  
+  - infinite scroll
+  
+  - More beautiful video card
+  
+  - Animations on video
+  
+  - Category view
+
+- 
+
+### backend
+
+- update interface for lazy-loading
+
+- add a new col `lazy` in table `groups` for lazy loading in front
+
+### some Q&A
+
+Q: why gid starts with `t:`
+
+A: tree node must have a unique node-key
